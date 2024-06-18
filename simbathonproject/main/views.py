@@ -1,4 +1,6 @@
 from django.shortcuts import render
-
-# Create your views here.
 from .models import Varsity
+# Create your views here.
+def mainpage(request):
+    return render(request,'main/mainpage.html')
+
