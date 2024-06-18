@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Varsity
+from .models import *
 
 # Register your models here.
 admin.site.register(Varsity)
+admin.site.register(Keyword)
