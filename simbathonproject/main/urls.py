@@ -1,7 +1,8 @@
 from django.urls import path
-from main import views
+from .views import *
 
 app_name='main'
 urlpatterns = [
-    path('', views.mainpage, name='mainpage')
+    path('', mainpage, name='mainpage'),
+    path('custom', custompage, name="custompage"),
 ]

@@ -5,6 +5,9 @@ def mainpage(request):
     varsitys= Varsity.objects.all()
     return render(request,'main/mainpage.html', {'varsitys': varsitys})
 
+def custompage(request):
+    return render(request, 'main/custompage.html')
+
 def varsity(request):
     varsity = Varsity(
         college=request.POST['college'],
