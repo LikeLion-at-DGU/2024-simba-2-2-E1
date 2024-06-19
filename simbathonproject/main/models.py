@@ -5,8 +5,8 @@ class Varsity(models.Model):
     college=models.CharField(max_length=20, null=True)
     major=models.CharField(max_length=20)
     like_count=models.PositiveIntegerField(default=0)
-    image_front=models.ImageField(null=True)
-    image_back=models.ImageField(null=True)
+    image_front=models.ImageField(upload_to='varsity/', null=True)
+    image_back=models.ImageField(upload_to='varsity/', null=True)
 
 class Keyword(models.Model):
     keyword=models.CharField(max_length=20, null=True)

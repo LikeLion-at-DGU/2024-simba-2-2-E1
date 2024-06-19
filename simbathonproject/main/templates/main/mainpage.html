@@ -36,9 +36,14 @@
                         <a href="#" class="next" title="다음">&gt;</a>
                     </div>
                 </div>
+                {% for varsity in varsitys %}
                 <div>
-                    <p><b>학과/단체명</b></p>
+                    <p><b>{{varsity.major}}/{{varsity.college}}</b></p>
+                    {% if varsity.image_front %}
+                        <p><img src="{{ varsity.image_front.url }}" alt="앞" width="150px"></p>
+                    {% endif %}
                 </div>
+                {% endfor %}
                 <div>
                     <button id='heart_btn'>
                         <img src="{% static 'assets/icons/heart.png' %}" id="icon_heart"/>
