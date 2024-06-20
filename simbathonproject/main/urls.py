@@ -6,6 +6,7 @@ urlpatterns = [
     path('', startpage, name='startpage'),
     path('main/', mainpage, name='mainpage'),
     path('custom/',custompage,name='custompage'),
-    path('design/', selectpage, name='selectpage',)
+    path('design/', selectpage, name='selectpage',),
+    path('like/<int:varsity_id>/', like_varsity, name='like_varsity'),
 ]
 
