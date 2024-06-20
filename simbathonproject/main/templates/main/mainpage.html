@@ -26,24 +26,22 @@
                         <a href="#" class="prev" title="이전">&lt;</a>
                     </div>
                     <div class="slider__img">
-                        <div class="slider__inner" style="width: 800 * 3">
-                            <div class="slider"><img src="{% static 'assets/test.png' %}" class="test_img"/></div>
-                            <div class="slider"><img src="{% static 'assets/test.png' %}" class="test_img"/></div>
-                            <div class="slider"><img src="{% static 'assets/test.png' %}" class="test_img"/></div>
+                        <div class="slider__inner">
+                            {% for varsity in varsitys %}
+                            <div class="slider">
+                                <img src="{{ varsity.image_front.url }}" class="test_img"/>
+                                <p align="center"><b>{{varsity.major}}/{{varsity.college}}</b></p>
+                                <button id='heart_btn'>
+                                    <img src="{% static 'assets/icons/heart.png' %}" id="icon_heart"/>
+                                    <p>{{varsity.like_count}}</p>
+                                </button>
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="slider__btn">
                         <a href="#" class="next" title="다음">&gt;</a>
                     </div>
-                </div>
-                <div>
-                    <p><b>학과/단체명</b></p>
-                </div>
-                <div>
-                    <button id='heart_btn'>
-                        <img src="{% static 'assets/icons/heart.png' %}" id="icon_heart"/>
-                        <p>xx</p>
-                    </button>
                 </div>
             </div>
         </div>
