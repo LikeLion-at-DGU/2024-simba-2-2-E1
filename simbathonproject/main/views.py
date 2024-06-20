@@ -32,3 +32,4 @@ def like_varsity(request, varsity_id):
         request.session['liked_varsitys'] = liked_varsitys
         return JsonResponse({'like_count': varsity.like_count, 'is_liked': is_liked})
     return JsonResponse({'error': 'Invalid request'}, status=400)
+#화이팅
