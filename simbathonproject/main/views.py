@@ -12,12 +12,15 @@ def mainpage(request):
 def custompage(request):
     return render(request, 'main/custompage.html')
 
-def varsity(request):
-    varsity = Varsity(
-        college=request.POST['college'],
-        major=request.POST['major'],
-        image_front=request.FILES.get('image_front'),
-        image_back=request.FILES.get('image_back')
-    )
-    varsity.save()
-    return redirect('mainpage')
+def selectpage(request):
+    return render(request, 'design/select_page.html')
+
+# def varsity(request):
+#     varsity = Varsity(
+#         college=request.POST['college'],
+#         major=request.POST['major'],
+#         image_front=request.FILES.get('image_front'),
+#         image_back=request.FILES.get('image_back')
+#     )
+#     varsity.save()
+#     return redirect('mainpage')
