@@ -6,5 +6,6 @@ urlpatterns = [
     path('', startpage, name='startpage'),
     path('main/', mainpage, name='mainpage'),
     path('custom/',custompage,name='custompage'),
+    path('design/', selectpage, name='selectpage',)
 ]
 

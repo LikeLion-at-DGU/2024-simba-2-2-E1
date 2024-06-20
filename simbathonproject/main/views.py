@@ -10,9 +10,10 @@ def mainpage(request):
     return render(request,'main/mainpage.html', {'varsitys': varsitys})
 
 def custompage(request):
-    return render(request,'main/custompage.html')
-def designpage(request):
-    return render(request,'design/select_page.html')
+    return render(request, 'main/custompage.html')
+
+def selectpage(request):
+    return render(request, 'design/select_page.html')
 
 # def varsity(request):
 #     varsity = Varsity(
