@@ -4,7 +4,6 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/main/custom_page.css' %}">
     <meta charset="UTF-8">
-    <title>뭐입을꽈</title>
 </head>
 <body>
     <div id="container">
@@ -46,11 +45,11 @@
                     </button>
                 </div>
                 <div id='design_btn_container'>
-                    <button id='design_btn'>Design</button>
+                    <a href='/design/'><button id='design_btn'>Design</button></a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="{% static 'js/main_page.js' %}"></script>
+    <script src="{% static 'js/main/custompage.js' %}"></script>
 </body>
 </html>
