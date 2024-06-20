@@ -21,3 +21,4 @@ def varsity(request):
     )
     varsity.save()
     return redirect('mainpage')
+
